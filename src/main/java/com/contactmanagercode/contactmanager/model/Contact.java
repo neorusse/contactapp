@@ -5,8 +5,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "users")
-public class Users {
+@Table(name = "contact")
+public class Contact {
 
   private static final long serialVersionUID = 1L;
 
@@ -29,7 +29,7 @@ public class Users {
   @NotBlank
   private String phone;
 
-  public Users() {
+  public Contact() {
   }
 
   public int getId() {
