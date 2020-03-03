@@ -44,4 +44,12 @@ public class ContactServiceImpl implements ContactService {
   public void saveContact(Contact contact) {
     contactRepository.save(contact);
   }
+
+  @Override
+  public void deleteContact(Contact contact) {
+    //ptional < Contact > contact = contactRepository.findById(id);
+
+      contactRepository.delete(contact);
+
+  }
 }
