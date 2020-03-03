@@ -20,6 +20,16 @@
                 height: 100px;
                 text-align: center;
             }
+
+            .footer p {
+                margin-top: 40px;
+            }
+
+            .text-warning {
+                color: red;
+                font-size: 12px;
+            }
+
         </style>
 
     </head>

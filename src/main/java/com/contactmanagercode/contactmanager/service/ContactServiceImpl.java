@@ -47,9 +47,6 @@ public class ContactServiceImpl implements ContactService {
 
   @Override
   public void deleteContact(Contact contact) {
-    //ptional < Contact > contact = contactRepository.findById(id);
-
       contactRepository.delete(contact);
-
   }
 }

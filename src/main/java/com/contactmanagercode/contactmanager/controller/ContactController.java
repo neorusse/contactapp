@@ -10,12 +10,9 @@ import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.Map;
 
 @Controller
 public class ContactController {
@@ -63,16 +60,22 @@ public class ContactController {
   }
 
   // Display Update Contact Page
-  @RequestMapping(value = "/update-contact/{id}", method = RequestMethod.GET)
-  public String showUpdateTodoPage(@PathVariable Integer id, ModelMap model) {
+  @RequestMapping(value = "/update-contact", method = RequestMethod.GET)
+  public String showUpdateTodoPage(@RequestParam Integer id, ModelMap model) {
+
+    logger.info("HTTP GET request received at /update-contact url");
+
     Contact contact = contactService.getContact(id);
+
     model.put("contact", contact);
     return "contact";
   }
 
   // Update Contact
-  @RequestMapping(value = "/update-todo", method = RequestMethod.POST)
+  @RequestMapping(value = "/update-contact", method = RequestMethod.POST)
   public String updateContact(ModelMap model, @Valid Contact contact, BindingResult bindingResult) {
+
+    logger.info("HTTP POST request received at /update-contact url");
 
     if (bindingResult.hasErrors()) {
       return "contact";
@@ -85,6 +88,9 @@ public class ContactController {
   // Delete contact route
   @RequestMapping(value = "/delete-contact/{id}", method = RequestMethod.GET)
   public String deleteTodo(@PathVariable Integer id) {
+
+    logger.info("HTTP DELETE request received at /delete-contact url");
+
     Contact contact = contactService.getContact(id);
     contactService.deleteContact(contact);
 

@@ -4,7 +4,7 @@
 
 ### Project Description
 
-A web [app](https://movie-watchlist.com/) for booking to attend conference.
+A web [app](https://movie-watchlist.com/) for managing your contacts.
 
 ### Table of Content
 
@@ -28,10 +28,6 @@ JSP
 
 Bootstrap
 
-Jquery
-
-Flyway
-
 Postgres
 
 ### Building from Source
@@ -54,7 +50,7 @@ This project uses [JUnit](https://junit.org/junit5/)
 
 ### License
 
-This Movie Watch List App is Open Source software released under the [MIT](https://opensource.org/licenses/MIT)
+This Contact Manager App is Open Source software released under the [MIT](https://opensource.org/licenses/MIT)
 
 ### Author
 
