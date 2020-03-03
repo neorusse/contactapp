@@ -15,7 +15,7 @@ public interface ContactService {
 
   void addContact(String firstName, String lastName, String gender, String phone);
 
-  // String deleteContact(Integer id);
+  void deleteContact(Contact contact);
 
   void saveContact(Contact contact);
 }
