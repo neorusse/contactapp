@@ -13,18 +13,16 @@ public class Contact {
   @GeneratedValue(strategy = GenerationType.AUTO)
   private int id;
 
-  @NotBlank
-  @Size(min=3,max=30)
+  @NotBlank(message="Please enter first name")
   private String firstName;
 
-  @NotBlank
-  @Size(min=3,max=30)
+  @NotBlank(message="Please enter last name")
   private String lastName;
 
-  @NotBlank
+  @NotBlank(message="Please choose your gender")
   private String gender;
 
-  @NotBlank
+  @NotBlank(message="Please enter phone number")
   private String phone;
 
   // default constructor
