@@ -8,11 +8,9 @@ import javax.validation.constraints.Size;
 @Table(name = "contact")
 public class Contact {
 
-  private static final long serialVersionUID = 1L;
-
+  // fields
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
-  @Column(name = "id", nullable = false, updatable = false)
   private int id;
 
   @NotBlank
@@ -29,7 +27,18 @@ public class Contact {
   @NotBlank
   private String phone;
 
+  // default constructor
   public Contact() {
+    super();
+  }
+
+  // parameterized constructor
+  public Contact(String firstName, String lastName, String gender, String phone) {
+    super();
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.gender = gender;
+    this.phone = phone;
   }
 
   public int getId() {
@@ -71,5 +80,4 @@ public class Contact {
   public void setPhone(String phone) {
     this.phone = phone;
   }
-
 }

@@ -7,5 +7,5 @@ import java.util.List;
 
 public interface ContactRepository extends JpaRepository<Contact, Integer> {
 
-  List<Contact> findByPhone(String phone);
+  List<Contact> findContactById(long id);
 }
