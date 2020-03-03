@@ -18,8 +18,8 @@
                         <th width="16%">First Name</th>
                         <th width="16%">Last Name</th>
                         <th width="16%">Gender</th>
-                        <th width="16%">Edit</th>
-                        <th width="16%">Delete</th>
+                        <th width="16%">Phone</th>
+                        <th width="16%">Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,8 +31,8 @@
                             <td>${contact.gender}</td>
                             <td>${contact.phone}</td>
                             <td><a type="button" class="btn btn-success"
-                                   href="/update-contact/${contact.id}">Update</a>
-                                <a type="button" class="btn btn-warning"
+                                   href="/update-contact?id=${contact.id}">Update</a>&nbsp;&nbsp;&nbsp;
+                                <a type="button" class="btn btn-danger"
                                    href="/delete-contact/${contact.id}">Delete</a></td>
                         </tr>
                     </c:forEach>
