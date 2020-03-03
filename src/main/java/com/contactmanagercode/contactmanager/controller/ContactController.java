@@ -62,6 +62,27 @@ public class ContactController {
     return "redirect:/viewcontacts";
   }
 
+  // Display Update Contact Page
+  @RequestMapping(value = "/update-contact/{id}", method = RequestMethod.GET)
+  public String showUpdateTodoPage(@PathVariable Integer id, ModelMap model) {
+    Contact contact = contactService.getContact(id);
+    model.put("contact", contact);
+    return "contact";
+  }
+
+  // Update Contact
+  @RequestMapping(value = "/update-todo", method = RequestMethod.POST)
+  public String updateContact(ModelMap model, @Valid Contact contact, BindingResult bindingResult) {
+
+    if (bindingResult.hasErrors()) {
+      return "contact";
+    }
+
+    contactService.updateContact(contact);
+    return "redirect:/viewcontacts";
+  }
+
+  // Delete contact route
   @RequestMapping(value = "/delete-contact/{id}", method = RequestMethod.GET)
   public String deleteTodo(@PathVariable Integer id) {
     Contact contact = contactService.getContact(id);
