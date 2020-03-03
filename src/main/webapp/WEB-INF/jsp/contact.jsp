@@ -10,29 +10,31 @@
                         <form:hidden path="id" />
                         <fieldset class="form-group">
                             <form:label path="firstName">First Name</form:label>
-                            <form:input path="firstName" type="text" class="form-control" required="required" />
+                            <form:input path="firstName" type="text" class="form-control"/>
                             <form:errors path="firstName" cssClass="text-warning" />
                         </fieldset>
 
                         <fieldset class="form-group">
                             <form:label path="lastName">Last Name</form:label>
-                            <form:input path="lastName" type="text" class="form-control" required="required" />
+                            <form:input path="lastName" type="text" class="form-control"/>
                             <form:errors path="lastName" cssClass="text-warning" />
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <form:label path="gender">Gender</form:label>
-                            <form:input path="gender" type="text" class="form-control" required="required" />
+                            <form:label path="gender">Gender</form:label>&nbsp;&nbsp;&nbsp;
+                            <form:radiobutton path="gender" value="M" />&nbsp;Male&nbsp;&nbsp;&nbsp;
+                            <form:radiobutton path="gender" value="F" />&nbsp;Female
                             <form:errors path="gender" cssClass="text-warning" />
                         </fieldset>
 
+
                         <fieldset class="form-group">
                             <form:label path="phone">Phone</form:label>
-                            <form:input path="phone" type="text" class="form-control" required="required" />
+                            <form:input path="phone" type="text" class="form-control"/>
                             <form:errors path="phone" cssClass="text-warning" />
                         </fieldset>
 
-                        <button type="submit" class="btn btn-success">Save</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
                     </form:form>
                 </div>
             </div>
