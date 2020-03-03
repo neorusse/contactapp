@@ -31,9 +31,9 @@
                             <td>${contact.gender}</td>
                             <td>${contact.phone}</td>
                             <td><a type="button" class="btn btn-success"
-                                   href="/update-contact?id=${contact.id}">Update</a>
+                                   href="/update-contact/${contact.id}">Update</a>
                                 <a type="button" class="btn btn-warning"
-                                   href="/update-contact?id=${contact.id}">Delete</a></td>
+                                   href="/delete-contact/${contact.id}">Delete</a></td>
                         </tr>
                     </c:forEach>
                 </tbody>
