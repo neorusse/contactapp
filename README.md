@@ -1,10 +1,10 @@
-# [Contact Manager App](https://contact-manager.com/)
+# [Contact Manager App](https://contact-dir-manager.herokuapp.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Project Description
 
-A web [app](https://movie-watchlist.com/) for managing your contacts.
+A web [app](https://contact-dir-manager.herokuapp.com/) for managing your contacts.
 
 ### Table of Content
 
