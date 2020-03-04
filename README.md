@@ -6,6 +6,8 @@
 
 A web [app](https://contact-dir-manager.herokuapp.com/) for managing your contacts.
 
+App Url: [Contact Manager App](https://contact-dir-manager.herokuapp.com/)
+
 ### Table of Content
 
 [Features](#features)<br/>
