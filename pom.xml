@@ -12,7 +12,7 @@
 	<artifactId>contactmanager</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>contactmanager</name>
-	<description>Demo project for Spring Boot</description>
+	<description>A Contact Manager App to securely manage your contacts</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -48,8 +48,8 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
