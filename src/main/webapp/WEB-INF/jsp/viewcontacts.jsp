@@ -32,7 +32,7 @@
                             <td>${contact.phone}</td>
                             <td><a type="button" class="btn btn-success"
                                    href="/update-contact?id=${contact.id}">Update</a>&nbsp;&nbsp;&nbsp;
-                                <a type="button" class="btn btn-danger"
+                                <a type="button" class="btn btn-danger" onclick="return confirm('Please confirm your action!')"
                                    href="/delete-contact/${contact.id}">Delete</a></td>
                         </tr>
                     </c:forEach>
